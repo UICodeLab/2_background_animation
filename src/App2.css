@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.centered-text {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.light{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.light2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  filter: blur(20px);
+  backdrop-filter: blur(10px);
+  opacity: 0.5;
+}
+
+.ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20px;
+  transform-origin: left center;
+  clip-path: polygon(31% 81%, 100% 92%, 30% 100%, 0 91%);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100px;
+  }
+}

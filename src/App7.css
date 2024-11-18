@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .App {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  h1.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  

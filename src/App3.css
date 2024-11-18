@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+}
+
+.grid-background {
+  display: grid;
+  grid-template-columns: repeat(20, 5vw);
+  grid-template-rows: repeat(20, 5vw);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+}
+
+.grid-square {
+  width: 5vw;
+  height: 5vw;
+  background-color: #000000;
+  box-sizing: border-box;
+  animation: borderRadiusAnimation 2s infinite alternate;
+}
+
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 0.2vw;
+  }
+  100% {
+    border-radius: 1.5vw;
+  }
+}
+
+.centered-text {
+  position: relative;
+  padding-top: 5vw;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}

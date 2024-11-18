@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.blurry-circle1 {
+  position: absolute;
+  top: 40vh;
+  left: 8vw;
+  width: 40vw;
+  height: 40vw;
+  background-color: #c7e8ff;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: circularMotion1 2s linear infinite;
+}
+
+.blurry-circle2 {
+  position: absolute;
+  top: 40vh;
+  left: 30vw;
+  width: 40vw;
+  height: 40vw;
+  background-color: #aebffa;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: circularMotion2 3s linear infinite;
+}
+
+.blurry-circle3 {
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  width: 30vw;
+  height: 30vw;
+  background-color: #c07ffd;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: circularMotion3 4s linear infinite;
+}
+
+.blurry-circle4 {
+  position: absolute;
+  top: 40vh;
+  left: 60vw;
+  width: 40vw;
+  height: 40vw;
+  background-color: #4ADEDE;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: circularMotion4 4s linear infinite;
+}
+
+@keyframes circularMotion1 {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(50px, -100px);
+  }
+  50% {
+      transform: translate(100px, 0);
+  }
+  75% {
+      transform: translate(50px, 50px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes circularMotion2 {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(-60px, 40px);
+  }
+  50% {
+      transform: translate(-120px, 0);
+  }
+  75% {
+      transform: translate(-60px, -100px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes circularMotion3 {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(40px, -100px);
+  }
+  50% {
+      transform: translate(80px, 0);
+  }
+  75% {
+      transform: translate(40px, 70px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes circularMotion4 {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(-100px, 50px);
+  }
+  50% {
+      transform: translate(-200px, 0);
+  }
+  75% {
+      transform: translate(-100px, -100px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
